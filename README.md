@@ -1,5 +1,5 @@
-# lottochecker
-Check lotto, powerball, megamillions numbers
+# William Haynes project
+Check lotto megamillions numbers
 
 # Usage:
 Run with no args or -h to see usage.
@@ -8,11 +8,11 @@ Run with no args or -h to see usage.
 % python3 lottochecker.py
 usage: lottochecker.py [-h] [-c {powerball,megamillions,lotto,lotto DP}] [-H]
 
-This script is used to check for lotto numbers and see if you won.
+This script is used to predict lotto numbers accurately.
 
 optional arguments:
   -h, --help            show this help message and exit
-  -c {powerball,megamillions,lotto,lotto DP}, --check {powerball,megamillions,lotto,lotto DP}
+  -c {megamillions,lotto,lotto DP}, --check {megamillions,lotto,lotto DP}
                         check winning numbers for specified game
   -H, --history         check your numbers against historical data for a game
 ```
@@ -25,11 +25,4 @@ The first names can be whatever you want. eg. "my numbers", "my dogs numbers", w
 The game names have at least "powerball", "megamillions", or "lotto". So you may call it "powerball2" or "powerball 2" etc.
 <br>
 
-## Send results via email
-Currently configured for use with gmail.
-<br> 
-Fill in your credentials at the top of lottochecker.py
-**hint** use an app password!
-<br> 
 
-You should be able to easily add a cron-job / scheduled task to run this script automatically :)
